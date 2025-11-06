@@ -1,0 +1,36 @@
+.home {
+  background-image: url("../assets/malem.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.btn-yellow {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #121212;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #ffd633;
+  transform: scale(1.05);
+}

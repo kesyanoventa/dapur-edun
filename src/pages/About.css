@@ -1,0 +1,30 @@
+.about {
+  padding: 4px 20px;
+  text-align: center;
+  background-color: #181818;
+}
+
+.about h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 50%;         
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
