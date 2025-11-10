@@ -17,22 +17,36 @@
   margin: 0 auto;
 }
 
+/* Bagian kiri: logo + teks */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo {
-  color: #ffcc00;
+  height: 60px; /* ubah di sini kalau mau lebih besar */
+  width: auto;
+  border-radius: 10px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.brand-name {
   font-size: 1.8rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  color: #ae5f5b;
   text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 1s ease forwards;
 }
 
-.logo:hover {
-  color: #ffd633;
+.brand-name:hover {
+  color: #dcaca4;
   transform: translateY(-2px);
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
 
+/* Daftar menu */
 .nav-links {
   display: flex;
   gap: 50px;
@@ -64,12 +78,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #ffcc00, #ffd633);
+  background: linear-gradient(90deg, #ae5f5b, #dcaca4);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ffcc00;
+  color: #ae5f5b;
 }
 
 .nav-links a:hover::after {
@@ -77,9 +91,15 @@
 }
 
 .nav-links a.active {
-  color: #ffcc00;
+  color: #ae5f5b;
 }
 
 .nav-links a.active::after {
   width: 100%;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
 }

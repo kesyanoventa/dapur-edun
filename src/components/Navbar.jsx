@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo.png"; // pastikan nama & ekstensi file-nya sesuai
 
 export default function Navbar() {
   const location = useLocation();
@@ -7,37 +8,41 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="logo">
-          Dapur Edun
-        </Link>
+        <div className="navbar-left">
+          <img src={logo} alt="Logo" className="logo" />
+          <Link to="/" className="brand-name">
+            Dapur Edun
+          </Link>
+        </div>
+
         <ul className="nav-links">
           <li>
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={location.pathname === "/" ? "active" : ""}
             >
               Home
             </Link>
           </li>
           <li>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className={location.pathname === "/about" ? "active" : ""}
             >
               About Us
             </Link>
           </li>
           <li>
-            <Link 
-              to="/products" 
+            <Link
+              to="/products"
               className={location.pathname === "/products" ? "active" : ""}
             >
               Products
             </Link>
           </li>
           <li>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className={location.pathname === "/contact" ? "active" : ""}
             >
               Contact
