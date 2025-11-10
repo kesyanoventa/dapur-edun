@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
         <p className="fade-in delay-2">
           Rasakan kelezatan masakan rumahan khas nusantara dengan cita rasa yang edun banget!
         </p>
-        <a href="/products" className="btn-yellow fade-in delay-3">
+        <Link to="/products" className="btn-yellow fade-in delay-3">
           Lihat Menu
-        </a>
+        </Link>
       </div>
     </section>
   );

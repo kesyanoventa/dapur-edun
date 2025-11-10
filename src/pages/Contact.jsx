@@ -13,7 +13,7 @@ export default function Contact() {
           <p>📍 Taman Sentosa D3 No 26, Cikarang, Kab. Bekasi</p>
           <p>📞 0852-8300-5472</p>
         </div>
-        <a href="https://wa.me/6285233005472" className="btn-yellow fade-in delay-1">
+        <a href="https://wa.me/6285283005472" className="btn-yellow fade-in delay-1">
           Chat via WhatsApp
         </a>
       </div>
