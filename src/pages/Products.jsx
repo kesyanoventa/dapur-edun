@@ -7,20 +7,20 @@ import taichan from "../assets/taichan.jpg";
 export default function Products() {
   const favorites = [
     {
-      name: "Nasi Goreng Edun",
-      desc: "Nasi goreng pedas gurih khas Dapur Edun.",
-      price: "Rp20.000",
+      name: "Ayam Goreng",
+      desc: "Ayam goreng dengan bumbu penuh rempah.",
+      price: "Rp17.000",
       img: ayamgoreng,
     },
     {
-      name: "Mie Goreng Jawa",
-      desc: "Mie goreng manis pedas khas tradisional.",
-      price: "Rp18.000",
+      name: "Sate Taichan",
+      desc: "Sate ayam dengan bumbu taichan pedas dan segar.",
+      price: "Rp20.000",
       img: taichan,
     },
     {
-      name: "Ayam Geprek Sambal Matah",
-      desc: "Ayam crispy dengan sambal matah segar.",
+      name: "Gepuk",
+      desc: "Daging sapi gepuk dengan bumbu khas.",
       price: "Rp22.000",
       img: gepuk,
     },

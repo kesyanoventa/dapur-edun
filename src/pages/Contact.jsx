@@ -4,7 +4,7 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <section className="contact">
-      <h2>Hubungi Kami</h2>
+      <h2>Contact Us</h2>
       <p className="contact-info">
         Menerima layanan <strong>Dine In</strong>, <strong>Take Away</strong>,{" "}
         <strong>Delivery Order</strong>, dan <strong>Catering</strong>.
